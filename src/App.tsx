@@ -2,20 +2,18 @@
 import { useEffect, useState } from "react"
 import Profile from "./components/profile"
 import Navbar from "./components/navbar";
-import GridPattern from "./components/ui/animated-grid-pattern";
+
 import TextRevealByWord from "./components/ui/text-reveal";
 import About from "./components/about";
 import Perks from "./components/perks";
-import SocialMedia from "./components/ui/social";
+
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
 
 function App() {
   const [state, setState] = useState<boolean>(false)
   const [delayedZIndex, setDelayedZIndex] = useState(false);
-  const setBanner = () => {
-    setState(!state)
-  }
+
   useEffect(() => {
     let timer: NodeJS.Timeout;
     if (state) {

@@ -1,4 +1,4 @@
-import img from "../../assets/thumbnail_1.jpg"
+
 
 interface IProps {
     id: number

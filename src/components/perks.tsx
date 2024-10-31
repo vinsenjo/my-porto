@@ -1,7 +1,4 @@
 
-import { VscSymbolInterface } from "react-icons/vsc";
-import { IoCodeSlashSharp } from "react-icons/io5";
-import { FiDatabase } from "react-icons/fi";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";

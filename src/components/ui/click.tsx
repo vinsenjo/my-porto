@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 function ClickToCopy() {
     const [text, setText] = useState('vinjovinda@gmail.com');

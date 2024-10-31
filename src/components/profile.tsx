@@ -7,10 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 
 
 export default function Profile({ setState, state }: { state: boolean, setState: Function }) {
-    const [click, setIsClick] = useState<boolean>(false)
     const [delayedZIndex, setDelayedZIndex] = useState(false);
     const handleClick = () => {
-
         setState(true)
     }
 
@@ -21,7 +19,7 @@ export default function Profile({ setState, state }: { state: boolean, setState:
                 setDelayedZIndex(true);
             }, 131);
         } else {
-            setDelayedZIndex(false);
+            setDelayedZIndex(delayedZIndex);
         }
         return () => clearTimeout(timer);
     }, [state]);
@@ -42,20 +40,20 @@ export default function Profile({ setState, state }: { state: boolean, setState:
                     {state == true ? "Contact Me" : "More about me"}
 
                 </button>
-            <div className='flex gap-4 '>
-                <a href='https://github.com/vinsenjo' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
-                    <FaGithub />
-                    Github
-                </a>
-                <a href='https://www.linkedin.com/in/vinsensius-jovinda/' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
-                    <FaLinkedin />
-                    Linkedin
-                </a>
-                <a href='https://www.instagram.com/vinsenjovin/' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
-                    <FaInstagram />
-                    Instagram
-                </a>
-            </div>
+                <div className='flex gap-4 '>
+                    <a href='https://github.com/vinsenjo' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
+                        <FaGithub />
+                        Github
+                    </a>
+                    <a href='https://www.linkedin.com/in/vinsensius-jovinda/' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
+                        <FaLinkedin />
+                        Linkedin
+                    </a>
+                    <a href='https://www.instagram.com/vinsenjovin/' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
+                        <FaInstagram />
+                        Instagram
+                    </a>
+                </div>
             </BlurFade>
         </div>
     )
