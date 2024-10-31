@@ -18,7 +18,7 @@ function ClickToCopy() {
     };
 
     return (
-        <button onClick={handleCopyClick} className=" font-raleway text-4xl font-semibold text-black rounded">
+        <button onClick={handleCopyClick} className="hover:scale-105 duration-300 font-raleway  lg:text-4xl font-semibold text-black rounded">
             {text}
         </button>
     );

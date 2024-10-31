@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 export default function SocialMedia() {
     return (
-        <div className='flex gap-6 text-black text-2xl'>
+        <div className='flex gap-2 lg:gap-6 text-black text-lg flex-col  lg:text-2xl'>
             <a href='https://github.com/vinsenjo' className='flex items-center gap-2 hover:scale-105 duration-300' target='_blank'>
                 <FaGithub />
                 Github

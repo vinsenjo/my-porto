@@ -9,6 +9,7 @@ import Perks from "./components/perks";
 
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
+import Footer from "./components/ui/footer";
 
 function App() {
   const [state, setState] = useState<boolean>(false)
@@ -26,10 +27,10 @@ function App() {
     return () => clearTimeout(timer);
   }, [state]);
   return (
-    <div className="flex   px-5  lg:px-10 justify-center bg-cream">
-      <div className="bg-cream w-full scroll-smooth  lg:max-w-[1200px]">
+    <div className="flex   justify-center bg-cream">
+      <div className="bg-cream w-full scroll-smooth lg:px-10 px-5 pb-10 lg:max-w-[1200px]">
         <Navbar state={state} />
-        <div className='text-xl font-raleway  lg:min-h-screen relative  overflow-hidden'>
+        <div className='text-xl font-raleway  lg:min-h-screen relative  '>
           <div className="flex lg:flex-row flex-col relative">
             <Profile state={state} setState={setState} />
             <div className={`bg-cream lg:w-1/2 ${state == true ? " lg:translate-x-0 " : "lg:translate-x-full items-center"} w-full flex  justify-center lg:z-30 transition-all ease-out duration-700  lg:h-screen lg:absolute`}>
@@ -51,6 +52,7 @@ function App() {
         </div>
         <Portfolio />
         <Contact/>
+      <Footer/>
       </div>
     </div>
   )
