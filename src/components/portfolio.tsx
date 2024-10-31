@@ -15,10 +15,10 @@ export default function Portfolio() {
                     <BlurFade delay={0.25} inView>
                         <PortoCard id={1} image={img1} tittle={"Nezztar"} caption={"Property Rent App"} />
                     </BlurFade>
-                    <BlurFade delay={0.25*2} inView>
+                    <BlurFade delay={0.25} inView>
                         <PortoCard id={2} image={img2} tittle={"Flazz"} caption={"Moving House Service"} />
                     </BlurFade>
-                    <BlurFade delay={0.15} inView>
+                    <BlurFade delay={0.25} inView>
                         <PortoCard id={3} image={img3} tittle={"Ticketist"} caption={"Property Rent App"} />
                     </BlurFade>
                 </div>
